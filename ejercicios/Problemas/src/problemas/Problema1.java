@@ -20,7 +20,13 @@ public class Problema1 {
     }
     
     public static void imprimirDatos(int[][] datos){
-    
+        int pantalla;
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos.length; j++) {
+                pantalla=datos[i][j];
+                        System.out.println(pantalla);
+            }
+        }
     }
     
 }

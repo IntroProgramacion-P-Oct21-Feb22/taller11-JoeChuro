@@ -25,6 +25,8 @@ public class Ejemplo12 {
         }else{
             if (tipo==2) {
                 mensaje = ingresarInstitucion();
+                if(tipo==3){
+                }
             }else{
                 mensaje = "opción incorrecta";
             }
@@ -69,6 +71,24 @@ public class Ejemplo12 {
                 nombre, 
                 localidad);
         return cadena;        
+        
+        }
+    
+    public static String ingresarCiudad(){
+        Scanner entrada = new Scanner(System.in);
+        
+        String nombre;
+        double poblacion;
+        String cadena = "";
+        System.out.println("Ingrese nombre de institución");
+        nombre = entrada.nextLine();
+        System.out.println("Ingrese localidad");
+        localidad = entrada.nextLine();
+        cadena = String.format("%sInstitución: %s-%s\n", 
+                cadena, 
+                nombre, 
+                localidad);
+        return cadena;     
     }
     
 }

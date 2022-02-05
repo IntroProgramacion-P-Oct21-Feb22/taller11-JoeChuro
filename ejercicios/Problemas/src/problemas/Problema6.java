@@ -10,5 +10,9 @@ package problemas;
  * @author reroes
  */
 public class Problema6 {
-    
+    public static void main(String[] args) {
+    int[] informacion = {1, 2, 3, 10, 20, 30, 100, 200, 300};
+    double media=0;
+    double desvE=0;
+    }
 }
